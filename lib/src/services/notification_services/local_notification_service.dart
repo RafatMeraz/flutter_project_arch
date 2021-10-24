@@ -1,4 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
 class LocalNotificationService {
   static final LocalNotificationService _localNotificationService =
@@ -25,6 +26,8 @@ class LocalNotificationService {
     final InitializationSettings initializationSettings =
         InitializationSettings(
             android: _initSettingAndroid, iOS: _initSettingIOS);
+
+    tz.initializeTimeZones();
 
     await flutterLocalNotificationsPlugin.initialize(initializationSettings,
         onSelectNotification: onSelectNotification);
@@ -71,3 +74,24 @@ int id,
 String? body,
     NotificationDetails? notificationDetails,
 String? payload);*/
+/*
+
+// schedule notification set
+await flutterLocalNotificationsPlugin.zonedSchedule(
+12345,
+"A Notification From My App",
+"This notification is brought to you by Local Notifcations Package",
+tz.TZDateTime.now(tz.local).add(const Duration(days: 3)),
+const NotificationDetails(
+android: AndroidNotificationDetails(CHANNEL_ID, CHANNEL_NAME,
+CHANNEL_DESCRIPTION)),
+androidAllowWhileIdle: true,
+uiLocalNotificationDateInterpretation:
+UILocalNotificationDateInterpretation.absoluteTime);
+
+// cancel
+await flutterLocalNotificationsPlugin.cancel(NOTIFICATION_ID);
+// cancel all
+await flutterLocalNotificationsPlugin.cancelAll();
+
+}*/
