@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_arch/src/views/ui/welcome.dart';
-import 'package:flutter_project_arch/src/views/utils/colors.dart';
+import 'views/ui/welcome.dart';
+import 'views/utils/colors.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
