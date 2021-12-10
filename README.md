@@ -20,6 +20,15 @@ Then change the package name according to your new project with the help of "cha
 ```
 flutter pub run change_app_package_name:main com.new.package.name
 ```
+### Step 4
+Change the "name: value" to your current project name in pubspec.yaml. Now run ,
+
+```
+flutter pub get
+```
+### Step 5
+Go to firebase and set up your peoject and download your "google-service.json" and add it to the android/app folder of flutter project
+
 
 Now you are good to go :smiley::smiley:	
 
