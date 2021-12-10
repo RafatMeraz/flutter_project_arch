@@ -1,16 +1,27 @@
 # flutter_project_arch
 
-A new Flutter project.
+### Step 1
+Download this project or just clone the project with the help of cmd 
 
-## Getting Started
+```
+git clone https://github.com/RafatMeraz/flutter_project_arch.git
+```
 
-This project is a starting point for a Flutter application.
+### Step 2
+Open project with your favourite IDE and run command : 
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Step 3
+Then change the package name according to your new project with the help of "change_app_package_name:" package which is already in pubspec.yaml. So now run command
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+flutter pub run change_app_package_name:main com.new.package.name
+```
+
+Now you are good to go :smiley::smiley:	
+
+If you face any issue or any advice then feel free to email me
+:speech_balloon:razhossain201@gmail.com
