@@ -1,36 +1,16 @@
 # flutter_project_arch
 
-### Step 1
-Download this project or just clone the project with the help of cmd 
+A new Flutter project.
 
-```
-git clone https://github.com/RafatMeraz/flutter_project_arch.git
-```
+## Getting Started
 
-### Step 2
-Open project with your favourite IDE and run command : 
+This project is a starting point for a Flutter application.
 
-```
-flutter pub get
-```
+A few resources to get you started if this is your first Flutter project:
 
-### Step 3
-Then change the package name according to your new project with the help of "change_app_package_name:" package which is already in pubspec.yaml. So now run command
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-```
-flutter pub run change_app_package_name:main com.new.package.name
-```
-### Step 4
-Change the "name: value" to your current project name in pubspec.yaml. Now run ,
-
-```
-flutter pub get
-```
-### Step 5
-Go to firebase and set up your peoject and download your "google-service.json" and add it to the android/app folder of flutter project
-
-
-Now you are good to go :smiley::smiley:	
-
-If you face any issue or any advice then feel free to email me
-:speech_balloon:razhossain201@gmail.com
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

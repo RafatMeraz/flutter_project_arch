@@ -32,11 +32,11 @@ class AndroidRaisedButton implements PlatformButton {
       required VoidCallback onPressed}) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: child,
       style: ElevatedButton.styleFrom(
-          primary: backgroundColor,
+          backgroundColor: backgroundColor,
           padding: const EdgeInsets.symmetric(vertical: 8),
           textStyle: TextStyle(fontSize: 15, color: textColor)),
+      child: child,
     );
   }
 }
@@ -52,11 +52,11 @@ class IOSRaisedButton implements PlatformButton {
         required VoidCallback onPressed}) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: child,
       style: ElevatedButton.styleFrom(
-          primary: backgroundColor,
+          backgroundColor: backgroundColor,
           padding: const EdgeInsets.symmetric(vertical: 8),
           textStyle: TextStyle(fontSize: 15, color: textColor)),
+      child: child,
     );
   }
 }
@@ -72,11 +72,11 @@ class WebRaisedButton implements PlatformButton {
         required VoidCallback onPressed}) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: child,
       style: ElevatedButton.styleFrom(
-          primary: backgroundColor,
+          backgroundColor: backgroundColor,
           padding: const EdgeInsets.symmetric(vertical: 8),
           textStyle: TextStyle(fontSize: 15, color: textColor)),
+      child: child,
     );
   }
 }

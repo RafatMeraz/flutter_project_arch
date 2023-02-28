@@ -17,7 +17,7 @@ class LocalNotificationService {
   Future<void> init() async {
     const AndroidInitializationSettings _initSettingAndroid = AndroidInitializationSettings('app_icon');
 
-    final IOSInitializationSettings _initSettingIOS = IOSInitializationSettings(
+    final DarwinInitializationSettings _initSettingIOS = DarwinInitializationSettings(
         requestSoundPermission: false,
         requestAlertPermission: false,
         requestBadgePermission: false,
@@ -30,10 +30,10 @@ class LocalNotificationService {
     tz.initializeTimeZones();
 
     await flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: onSelectNotification);
+        onDidReceiveNotificationResponse: onSelectNotification);
   }
 
-  Future onSelectNotification(String? payload) async {}
+  Future onSelectNotification  (NotificationResponse notificationResponse) async {}
 
   Future onDidReceiveLocalNotification(
       int value, String? x, String? y, String? z) async {}
